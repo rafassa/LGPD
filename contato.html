@@ -32,7 +32,7 @@
             <input class="inputMain" required name="cpf" type="text" placeholder="Digite seu CPF" >
             <input class="inputMain" required name="sobrenome" type="text" placeholder="Digite seu sobrenome" >
             <input class="inputMain" required name="telefone" type="tel" placeholder="Digite seu telefone" >
-            <select class="inputMain" id="opcao">
+            <select class="inputMain" name="contato" id="opcao">
                 <option value="Email">Email</option>
                 <option value="Telefone">Telefone</option>
             </select>
@@ -47,7 +47,7 @@
                     <input type="checkbox"><p>Sim, também quero receber descontos e novidades</p></input>
                 </div>
                 </div>
-                <button class="botao">Enviar</button> 
+                <button class="botao" type="submit" onclick="Post(this.form)">Enviar</button> 
         </label>
         
       </form>
