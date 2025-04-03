@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-nos</title>
+    <link rel="stylesheet" href="contato.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <header>
+        <menu class="menu">
+            <img src="img/logo-ford-256.png" alt="Imagem" class="Imagem">
+            <nav class="nav">
+                <ul class="ul">
+                    <li class="li"><a class="texto" href="index.html">Home</a></li>
+                    <li class="li"><a class="texto" href="lancamento.html">Lançamento</a></li>
+                    <li class="li"><a class="texto" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="divInvisivel">
+            </div>
+        </menu>
+    </header>
+    <main>
+      <form  class="form" onsubmit="return false;">
+        <img  class="imagemM" src="img/xls 2.2 diesel.jpg" alt="Imagem xls">
+        <label for="nome" class="imputs">
+            Sobre você
+            <input class="inputMain" required name="nome" type="text" placeholder="Digite seu nome" >
+            <input class="inputMain" required name="email" type="email" placeholder="Digite seu E-MAIL" >
+            <input class="inputMain" required name="cpf" type="text" placeholder="Digite seu CPF" >
+            <input class="inputMain" required name="sobrenome" type="text" placeholder="Digite seu sobrenome" >
+            <input class="inputMain" required name="telefone" type="tel" placeholder="Digite seu telefone" >
+            <select class="inputMain" id="opcao">
+                <option value="Email">Email</option>
+                <option value="Telefone">Telefone</option>
+            </select>
+            <p class="termoCondicoes">Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A 
+                qualquer momento, será possível editar ou remover tais dados. <a href="https://www.ford.com.br/politica-de-privacidade/">Termos e condições</a></p>
+            <div class="concordar">
+                <div class="inputTermo" >
+                    <input  required type="checkbox">
+                    <p>Sim, e concordo com os vossos termos</p>
+                </div>
+                <div class="inputTermo" >
+                    <input type="checkbox"><p>Sim, também quero receber descontos e novidades</p></input>
+                </div>
+                </div>
+                <button class="botao">Enviar</button> 
+        </label>
+        
+      </form>
+    </main>
+    <footer>
+        <div class="divTotal">
+            <div class="divF">
+                <p class="textoF">Redes Socias</p>
+                <nav class="navF">
+                    <a target="_blank" href="https://www.facebook.com/FordBrasil/"><img class="navImg" src="img/facebook-50.png" alt="Facebook"></a> 
+                    <a target="_blank" href="https://www.instagram.com/fordbrasil/"><img class="navImg" src="img/instagram-logo-50.png" alt="Instragram"></a>
+                    <a target="_blank" href="https://www.youtube.com/fordbrasil"><img class="navImg" src="img/youtube-squared-50.png" alt="Youtube"></a>
+                </nav>
+            </div>
+
+            <div class="alinhamento__Imagem__Logo">
+                <img class="imagemFord" src="img/ford-96.png" alt="Ford imagem">
+            </div>  
+            
+        </div>
+    </footer>
+
+</body>
+</html>
