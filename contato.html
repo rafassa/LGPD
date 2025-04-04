@@ -25,30 +25,48 @@
     <main>
       <form  class="form" onsubmit="return false;">
         <img  class="imagemM" src="img/xls 2.2 diesel.jpg" alt="Imagem xls">
-        <label for="nome" class="imputs">
-            Sobre você
+        <div class="inputs">
+           <p id="textoSobre">Sobre você</p>
+            
+            
+            <label class="label" for="nome"></label>
             <input class="inputMain" required name="nome" type="text" placeholder="Digite seu nome" >
+
+            <label class="label" for="email"></label>
             <input class="inputMain" required name="email" type="email" placeholder="Digite seu E-MAIL" >
+
+            <label class="label" for="cpf"></label>
             <input class="inputMain" required name="cpf" type="text" placeholder="Digite seu CPF" >
+
+            <label class="label" for="sobrenome"></label>
             <input class="inputMain" required name="sobrenome" type="text" placeholder="Digite seu sobrenome" >
+
+            <label class="label" for="telefone"></label>
             <input class="inputMain" required name="telefone" type="tel" placeholder="Digite seu telefone" >
+
+            <label class="label" for="contato"></label>
             <select class="inputMain" name="contato" id="opcao">
                 <option value="Email">Email</option>
                 <option value="Telefone">Telefone</option>
             </select>
+
+            
             <p class="termoCondicoes">Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A 
                 qualquer momento, será possível editar ou remover tais dados. <a href="https://www.ford.com.br/politica-de-privacidade/">Termos e condições</a></p>
             <div class="concordar">
-                <div class="inputTermo" >
-                    <input  required type="checkbox">
-                    <p>Sim, e concordo com os vossos termos</p>
+                <label for="nome" id="termoAceito" class="inputTermo">
+                    <input  required type="checkbox" onclick="controlarBotao()">
+                    Sim, e concordo com os vossos termos
+                </label>
+
+                <label for="nome"class="inputTermo" >
+                    <input type="checkbox"
+                    >Sim, também quero receber descontos e novidades
+                </label>
+
                 </div>
-                <div class="inputTermo" >
-                    <input type="checkbox"><p>Sim, também quero receber descontos e novidades</p></input>
-                </div>
-                </div>
-                <button class="botao" type="submit" onclick="Post(this.form)">Enviar</button> 
-        </label>
+                <button id="botao" class="botao" type="submit" onclick="Post(this.form)"disabled>Enviar</button> 
+            </div>
         
       </form>
     </main>

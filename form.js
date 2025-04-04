@@ -30,3 +30,12 @@ function Post(form) {
             form.reset();
 }
 
+
+function controlarBotao() {
+  
+    const checkbox = document.querySelector('#termoAceito input[type="checkbox"]');
+    const botao = document.getElementById('botao');
+
+    botao.disabled = !checkbox.checked;
+}
+
