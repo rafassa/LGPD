@@ -33,7 +33,7 @@ function Post(form) {
 
 function controlarBotao() {
   
-    const checkbox = document.querySelector('#termoAceito input[type="checkbox"]');
+    const checkbox = document.getElementById('termoAceito') 
     const botao = document.getElementById('botao');
 
     botao.disabled = !checkbox.checked;
