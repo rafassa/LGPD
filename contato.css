@@ -178,10 +178,17 @@ width: 100%;
 	cursor: pointer;
 	height: fit-content;
 	padding: 2.5%;
-	background-color: #1351d8;
+	background-color: #52565e;
 	color: white;
+	cursor:not-allowed;
+	transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
+.botao.enabled{
+	background-color: #1351d8;
+	cursor: pointer;
+	transition: background-color 0.5s ease, transform 0.5s ease;
+}
 
 .inputMain::placeholder{
 padding-left: 1%;

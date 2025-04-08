@@ -37,5 +37,14 @@ function controlarBotao() {
     const botao = document.getElementById('botao');
 
     botao.disabled = !checkbox.checked;
+
+    if (termoAceito.checked) {
+        botao.disabled = false; 
+        botao.classList.add("enabled"); 
+    } else {
+        botao.disabled = true; 
+        botao.classList.remove("enabled"); 
+    }
 }
+
 
