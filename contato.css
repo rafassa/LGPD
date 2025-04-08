@@ -127,13 +127,13 @@ width: 100%;
 }
 
 .inputMain{
-	height: 2em;
+	height: 2.5em;
 	cursor: pointer;
 	color: black;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	border: gray solid;
+	border: rgb(66, 65, 65) solid;
 
 
 }
@@ -167,7 +167,8 @@ width: 100%;
 	display: flex;
 	gap: 1%;
 	width: 100%;
-	padding: 3%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	font-size: small;
 }
 .botao{
@@ -176,13 +177,14 @@ width: 100%;
 	font-size: 1em;
 	cursor: pointer;
 	height: fit-content;
-	
-	
+	padding: 2.5%;
+	background-color: #1351d8;
+	color: white;
 }
 
 
 .inputMain::placeholder{
-text-align: center;
+padding-left: 1%;
 color: black;
 }
 
@@ -204,7 +206,7 @@ padding-top: 1%;
 	.botao{
 		height: AUTO;
 		width: 30%;
-		font-size: 90%;
+		font-size: 80%;
 	}
 	.Imagem{width: 25%;}
 
